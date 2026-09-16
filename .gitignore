@@ -28,3 +28,7 @@ run_on_phone.ps1
 SIGNING_BACKUP_README.md
 *.apk
 *.apk.idsig
+
+# Unrelated local screen-answer tool workspaces
+screen_answer/
+screen_answer_v17/

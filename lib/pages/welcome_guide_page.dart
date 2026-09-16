@@ -38,7 +38,7 @@ class _WelcomeGuidePageState extends State<WelcomeGuidePage>
     _GuideMoment(
       eyebrow: '只属于你们',
       title: '所有心情与回忆，都留在这部手机里',
-      message: '不用登录，也不会上传。这里是一座安静、私密的小花园。',
+      message: '记录保存在本机。使用今日花语或情绪解语并点按生成时，本次填写与主动选中的文字会交给 DeepSeek；其他记录不会自动上传。',
     ),
   ];
 

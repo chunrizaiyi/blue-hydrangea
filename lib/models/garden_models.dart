@@ -43,30 +43,6 @@ class TenderNote {
   };
 }
 
-class Letter {
-  const Letter({
-    this.id,
-    required this.category,
-    required this.content,
-    required this.date,
-    this.imagePath,
-  });
-
-  final int? id;
-  final String category;
-  final String content;
-  final DateTime date;
-  final String? imagePath;
-
-  factory Letter.fromMap(Map<String, Object?> map) => Letter(
-    id: map['id'] as int?,
-    category: map['category'] as String,
-    content: map['content'] as String,
-    date: DateTime.parse(map['date'] as String),
-    imagePath: map['image_path'] as String?,
-  );
-}
-
 class Memory {
   const Memory({
     this.id,
