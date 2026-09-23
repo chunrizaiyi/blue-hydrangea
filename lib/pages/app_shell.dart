@@ -187,9 +187,9 @@ class _AppShellState extends State<AppShell>
             label: '我视角下的他',
           ),
           NavigationDestination(
-            icon: Icon(Icons.mail_outline),
-            selectedIcon: _BloomingNavIcon(Icons.mail),
-            label: '信箱',
+            icon: Icon(Icons.forum_outlined),
+            selectedIcon: _BloomingNavIcon(Icons.forum_rounded),
+            label: '心语',
           ),
           NavigationDestination(
             icon: Icon(Icons.photo_album_outlined),

@@ -302,25 +302,25 @@ class FocusTimerService : Service() {
                 status == "overtime"
         val todayChronometerBase = now - todayFocused.coerceAtMost(now)
 
-        val title = "瀹濆疂浠婂ぉ宸茬粡涓撴敞浜?
+        val title = "宝宝今天已经专注了"
         val content = when (status) {
             "running" -> when {
-                mode == "stopwatch" -> "涓撴敞杩樺湪鎱㈡參绱Н 路 瀹濆疂鐪熸~"
-                mode == "countdown" -> "鍊掕鏃跺畨闈欒繘琛屼腑 路 瀹濆疂鐪熸~"
+                mode == "stopwatch" -> "专注还在慢慢累积 · 宝宝真棒~"
+                mode == "countdown" -> "倒计时安静进行中 · 宝宝真棒~"
                 phase == "rest" ->
-                    "鐣寗浼戞伅杩樺墿 ${formatDuration(remaining)} 路 姝囦竴浼氬効鍚"
-                else -> "杩欎竴棰楃暘鑼勬鍦ㄦ參鎱㈡垚鐔?路 瀹濆疂鐪熸~"
+                    "番茄休息还剩 ${formatDuration(remaining)} · 歇一会儿吧~"
+                else -> "这一颗番茄正在慢慢成熟 · 宝宝真棒~"
             }
             "paused" ->
-                "浠婂ぉ宸茬粡涓撴敞 ${formatDuration(todayFocused)} 路 闅忔椂鍙互缁х画"
+                "今天已经专注 ${formatDuration(todayFocused)} · 随时可以继续"
             "overtime" -> if (FocusTimerStateStore.bool(snapshot, "isSilentOvertime")) {
-                "瀹濆疂杩樺湪璁ょ湡鍧氭寔 路 鎼炲畬浜嗗氨鐐硅繖閲屽惂~"
+                "宝宝还在认真坚持 · 搞完了就点这里吧~"
             } else {
-                "鍊掕鏃跺埌鍟?路 瀹濆疂杩樺湪璁ょ湡鍧氭寔"
+                "倒计时到啦 · 宝宝还在认真坚持"
             }
             "finished" ->
-                "浠婂ぉ宸茬粡涓撴敞 ${formatDuration(todayFocused)} 路 瀹濆疂鐪熸~"
-            else -> "涓撴敞鐨勫皬鑺辨鍦ㄥ畨闈欑洓寮€"
+                "今天已经专注 ${formatDuration(todayFocused)} · 宝宝真棒~"
+            else -> "专注的小花正在安静盛开"
         }
 
         val builder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -387,41 +387,41 @@ class FocusTimerService : Service() {
         when (status) {
             "running" -> {
                 hyperPrimaryAction = notificationAction(
-                    "鏆傚仠",
+                    "暂停",
                     servicePendingIntent(actionPause, snapshot, requestPause),
                 ).also(builder::addAction)
                 hyperEndAction = notificationAction(
-                    "缁撴潫",
+                    "结束",
                     openClockPendingIntent(snapshot, "end"),
                 ).also(builder::addAction)
             }
             "paused" -> {
                 hyperPrimaryAction = notificationAction(
-                    "缁х画",
+                    "继续",
                     servicePendingIntent(actionResume, snapshot, requestResume),
                 ).also(builder::addAction)
                 hyperEndAction = notificationAction(
-                    "缁撴潫",
+                    "结束",
                     openClockPendingIntent(snapshot, "end"),
                 ).also(builder::addAction)
             }
             "overtime" -> if (FocusTimerStateStore.bool(snapshot, "isSilentOvertime")) {
                 hyperEndAction = notificationAction(
-                    "瀹屾垚鍟?,
+                    "完成啦",
                     servicePendingIntent(actionFinishOvertime, snapshot, requestFinish),
                 ).also(builder::addAction)
             } else {
                 hyperPrimaryAction = notificationAction(
-                    "鍋滃彮",
+                    "停叭",
                     servicePendingIntent(actionFinishOvertime, snapshot, requestFinish),
                 ).also(builder::addAction)
                 hyperEndAction = notificationAction(
-                    "闈欓煶缁х画",
+                    "静音继续",
                     servicePendingIntent(actionSilence, snapshot, requestSilence),
                 ).also(builder::addAction)
             }
             "finished" -> hyperEndAction = notificationAction(
-                "鍥炲幓鐪嬬湅",
+                "回去看看",
                 openClockPendingIntent(snapshot, "open"),
             ).also(builder::addAction)
         }
@@ -473,13 +473,13 @@ class FocusTimerService : Service() {
         }
         builder
             .setSmallIcon(R.drawable.ic_focus_timer)
-            .setContentTitle("瀹濆疂浠婂ぉ宸茬粡涓撴敞浜?)
+            .setContentTitle("宝宝今天已经专注了")
             .setContentText(
                 when (status) {
-                    "running" -> "涓撴敞鏃堕棿姝ｅ湪鎱㈡參澧炲姞"
-                    "paused" -> "宸蹭笓娉?${formatDuration(todayFocused)} 路 鏆傚仠涓?
-                    "overtime" -> "瀹濆疂杩樺湪璁ょ湡鍧氭寔"
-                    else -> "宸蹭笓娉?${formatDuration(todayFocused)} 路 瀹屾垚鍟?
+                    "running" -> "专注时间正在慢慢增加"
+                    "paused" -> "已专注 ${formatDuration(todayFocused)} · 暂停中"
+                    "overtime" -> "宝宝还在认真坚持"
+                    else -> "已专注 ${formatDuration(todayFocused)} · 完成啦"
                 },
             )
             .setCategory(Notification.CATEGORY_STOPWATCH)
@@ -644,10 +644,10 @@ class FocusTimerService : Service() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
         val channel = NotificationChannel(
             notificationChannelId,
-            "涓撴敞璁℃椂涓庡€掕鏃?,
+            "专注计时与倒计时",
             NotificationManager.IMPORTANCE_DEFAULT,
         ).apply {
-            description = "鍦ㄥ悗鍙般€侀攣灞忓拰绯荤粺瀹炴椂鐘舵€佷腑鏄剧ず瀹濆疂鐨勮鏃惰繘搴?
+            description = "在后台、锁屏和系统实时状态中显示宝宝的计时进度"
             setSound(null, null)
             enableVibration(false)
             lockscreenVisibility = Notification.VISIBILITY_PUBLIC
@@ -804,4 +804,3 @@ class FocusTimerService : Service() {
         }
     }
 }
-

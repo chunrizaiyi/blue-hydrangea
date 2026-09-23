@@ -18,6 +18,7 @@ import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
+import io.flutter.plugin.common.StandardMethodCodec
 import org.json.JSONObject
 
 class MainActivity : FlutterActivity() {
@@ -44,6 +45,31 @@ class MainActivity : FlutterActivity() {
 
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        val messenger = flutterEngine.dartExecutor.binaryMessenger
+        MethodChannel(
+            messenger,
+            "blue_hydrangea/daily_phrase_credentials",
+            StandardMethodCodec.INSTANCE,
+            messenger.makeBackgroundTaskQueue(),
+        ).setMethodCallHandler { call, result ->
+            try {
+                when (call.method) {
+                    "hasKey" -> result.success(DailyPhraseCredentials.hasKey(applicationContext))
+                    "readKey" -> result.success(DailyPhraseCredentials.read(applicationContext))
+                    "saveKey" -> {
+                        DailyPhraseCredentials.save(applicationContext, call.arguments as? String ?: "")
+                        result.success(null)
+                    }
+                    "removeKey" -> {
+                        DailyPhraseCredentials.remove(applicationContext)
+                        result.success(null)
+                    }
+                    else -> result.notImplemented()
+                }
+            } catch (_: Exception) {
+                result.error("credential_unavailable", "Credential operation failed", null)
+            }
+        }
         MethodChannel(
             flutterEngine.dartExecutor.binaryMessenger,
             displayChannel,

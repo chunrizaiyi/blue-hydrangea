@@ -7,7 +7,7 @@ class LocalDatabase {
   LocalDatabase._();
 
   static final instance = LocalDatabase._();
-  static const int databaseVersion = 7;
+  static const int databaseVersion = 8;
   static const int recordLimit = 1500;
   static const int anniversaryLimit = 100;
   Future<Database>? _databaseFuture;
@@ -41,15 +41,6 @@ class LocalDatabase {
           CREATE TABLE tender_notes(
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             title TEXT NOT NULL,
-            content TEXT NOT NULL,
-            date TEXT NOT NULL,
-            image_path TEXT
-          )
-        ''');
-        await db.execute('''
-          CREATE TABLE letters(
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            category TEXT NOT NULL,
             content TEXT NOT NULL,
             date TEXT NOT NULL,
             image_path TEXT
@@ -96,6 +87,9 @@ class LocalDatabase {
         if (oldVersion < 7) {
           await _createMemoryImagesTable(db);
           await _migrateLegacyMemoryImages(db);
+        }
+        if (oldVersion < 8) {
+          await db.execute('DROP TABLE IF EXISTS letters');
         }
       },
     );
@@ -251,17 +245,6 @@ class LocalDatabase {
       'setting_key': 'welcome_guide_v1_completed',
       'setting_value': 'true',
     }, conflictAlgorithm: ConflictAlgorithm.replace);
-  }
-
-  Future<List<Letter>> lettersFor(String category) async {
-    final db = await database;
-    final rows = await db.query(
-      'letters',
-      where: 'category = ?',
-      whereArgs: [category],
-      orderBy: 'date DESC',
-    );
-    return rows.map(Letter.fromMap).toList();
   }
 
   Future<List<Memory>> memories() async {
@@ -573,21 +556,6 @@ class LocalDatabase {
 
   static Future<void> _seed(Database db) async {
     final now = DateTime.now();
-    const letters = {
-      '今天有点累': '如果今天很辛苦，就不要再责怪自己了。你已经做得很好了。累的时候，就先在这里歇一会儿。',
-      '今天想被安慰': '不用把所有情绪都解释清楚。我会先抱抱你，再慢慢听你说。',
-      '今天有点委屈': '你的委屈不是小题大做。那些让你难过的瞬间，都值得被认真听见。',
-      '今天想你了': '我也在想你。思念像一只蓝色蝴蝶，已经先一步飞到了你身边。',
-      '今天只是想看看你写的话': '谢谢你点开这里。今天没有特别的理由，只是依然很认真地喜欢你。',
-    };
-    for (final entry in letters.entries) {
-      await db.insert('letters', {
-        'category': entry.key,
-        'content': entry.value,
-        'date': now.toIso8601String(),
-      });
-    }
-
     await db.insert('memories', {
       'note': '那天一起吃饭，很普通，但我觉得很幸福。',
       'date': DateTime(now.year, now.month, 1).toIso8601String(),

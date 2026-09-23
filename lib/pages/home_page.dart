@@ -4,6 +4,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../models/garden_models.dart';
+import '../features/daily_phrase/daily_phrase_page.dart';
 import '../services/local_database.dart';
 import '../services/quote_service.dart';
 import '../services/seamless_white_noise_player.dart';
@@ -12,7 +13,6 @@ import '../services/white_noise_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/garden_background.dart';
 import '../widgets/garden_components.dart';
-import 'comfort_page.dart';
 import 'focus_clock_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -30,6 +30,7 @@ class _HomePageState extends State<HomePage>
   final _noisePlayer = SeamlessWhiteNoisePlayer();
   GentleQuote? _quote;
   var _opening = false;
+  var _dailyPhraseExpanded = false;
   var _noiseExpanded = false;
   var _noiseKind = WhiteNoiseKind.rain;
   var _noisePlaying = false;
@@ -163,6 +164,11 @@ class _HomePageState extends State<HomePage>
     }
   }
 
+  void _toggleDailyPhrase() {
+    FocusManager.instance.primaryFocus?.unfocus();
+    setState(() => _dailyPhraseExpanded = !_dailyPhraseExpanded);
+  }
+
   Future<void> _toggleNoise() async {
     if (_noiseLoading) return;
     try {
@@ -272,7 +278,7 @@ class _HomePageState extends State<HomePage>
                     children: [
                       const Expanded(
                         child: Text(
-                          '威威给你的蓝色绣球花',
+                          '给你的蓝色绣球花',
                           style: TextStyle(
                             color: AppColors.deepBlue,
                             fontSize: 13,
@@ -453,45 +459,94 @@ class _HomePageState extends State<HomePage>
                   const SizedBox(height: 16),
                   const _FocusClockEntry(),
                   const SizedBox(height: 16),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(26),
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const ComfortPage()),
-                    ),
-                    child: const GardenCard(
-                      child: Row(
-                        children: [
-                          _QuietCornerIcon(),
-                          SizedBox(width: 16),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
+                  GardenCard(
+                    padding: EdgeInsets.zero,
+                    child: Column(
+                      children: [
+                        InkWell(
+                          borderRadius: BorderRadius.circular(26),
+                          onTap: _toggleDailyPhrase,
+                          child: Padding(
+                            padding: const EdgeInsets.all(20),
+                            child: Row(
                               children: [
-                                Text(
-                                  '如果你现在不开心',
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w600,
+                                const _DailyPhraseIcon(),
+                                const SizedBox(width: 16),
+                                const Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        '今日花语',
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      SizedBox(height: 5),
+                                      Text(
+                                        '说说此刻的心情，收下一小朵温柔。',
+                                        style: TextStyle(
+                                          color: AppColors.muted,
+                                          height: 1.55,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                SizedBox(height: 5),
-                                Text(
-                                  '这里有一个安静的角落，什么都不用解释。',
-                                  style: TextStyle(
-                                    color: AppColors.muted,
-                                    height: 1.55,
+                                AnimatedRotation(
+                                  turns: _dailyPhraseExpanded ? .5 : 0,
+                                  duration: const Duration(milliseconds: 460),
+                                  curve: Curves.easeInOutCubic,
+                                  child: const Icon(
+                                    Icons.keyboard_arrow_down_rounded,
+                                    color: AppColors.deepBlue,
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                          Icon(
-                            Icons.arrow_forward_ios_rounded,
-                            size: 16,
-                            color: AppColors.muted,
+                        ),
+                        ClipRect(
+                          child: AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 460),
+                            reverseDuration: const Duration(milliseconds: 360),
+                            switchInCurve: Curves.easeOutCubic,
+                            switchOutCurve: Curves.easeInCubic,
+                            transitionBuilder: (child, animation) {
+                              final curved = CurvedAnimation(
+                                parent: animation,
+                                curve: Curves.easeOutCubic,
+                                reverseCurve: Curves.easeInCubic,
+                              );
+                              return FadeTransition(
+                                opacity: curved,
+                                child: SizeTransition(
+                                  sizeFactor: curved,
+                                  alignment: Alignment.topCenter,
+                                  child: SlideTransition(
+                                    position: Tween(
+                                      begin: const Offset(0, -.025),
+                                      end: Offset.zero,
+                                    ).animate(curved),
+                                    child: child,
+                                  ),
+                                ),
+                              );
+                            },
+                            child: _dailyPhraseExpanded
+                                ? const Padding(
+                                    key: ValueKey('daily-phrase-open'),
+                                    padding: EdgeInsets.fromLTRB(20, 0, 20, 22),
+                                    child: DailyPhrasePanel(),
+                                  )
+                                : const SizedBox.shrink(
+                                    key: ValueKey('daily-phrase-closed'),
+                                  ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],
@@ -1740,8 +1795,8 @@ extension on WhiteNoiseKind {
   };
 }
 
-class _QuietCornerIcon extends StatelessWidget {
-  const _QuietCornerIcon();
+class _DailyPhraseIcon extends StatelessWidget {
+  const _DailyPhraseIcon();
 
   @override
   Widget build(BuildContext context) {
@@ -1752,7 +1807,7 @@ class _QuietCornerIcon extends StatelessWidget {
         color: AppColors.mistBlue,
         shape: BoxShape.circle,
       ),
-      child: const Icon(Icons.nights_stay_outlined, color: AppColors.deepBlue),
+      child: const Butterfly(size: 27),
     );
   }
 }
