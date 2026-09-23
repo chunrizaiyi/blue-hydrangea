@@ -15,12 +15,12 @@ void main() {
 
   test('纪念日当天算第 1 天并自动生成温柔文案', () {
     final anniversary = Anniversary(
-      message: '我和朱泽威在一起',
+      message: '我们在一起',
       date: DateTime(2026, 7, 29),
     );
 
     expect(anniversary.elapsedDays(DateTime(2026, 7, 29, 23)), 1);
-    expect(anniversary.displaySentence(DateTime(2026, 7, 31)), '我和朱泽威在一起已经3天了');
+    expect(anniversary.displaySentence(DateTime(2026, 7, 31)), '我们在一起已经3天了');
   });
 
   test('未来纪念日显示剩余天数，同月同日下一年识别为周年', () {

@@ -28,7 +28,7 @@ class _WelcomeGuidePageState extends State<WelcomeGuidePage>
     _GuideMoment(
       eyebrow: '欢迎来到这里',
       title: '一朵只为你盛开的蓝色绣球花',
-      message: '这里收着威威想给你的温柔，也收着每一个值得珍藏的小瞬间。',
+      message: '这里收着给你的温柔，也收着每一个值得珍藏的小瞬间。',
     ),
     _GuideMoment(
       eyebrow: '点点小蝴蝶',
@@ -123,7 +123,7 @@ class _WelcomeGuidePageState extends State<WelcomeGuidePage>
                   children: [
                     const Expanded(
                       child: Text(
-                        '威威给你的蓝色绣球花',
+                        '给你的蓝色绣球花',
                         style: TextStyle(
                           color: AppColors.deepBlue,
                           fontSize: 13,

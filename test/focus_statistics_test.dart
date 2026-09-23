@@ -73,7 +73,7 @@ void main() {
   });
 
   test('数据库升级版本和专注记录上限固定', () {
-    expect(LocalDatabase.databaseVersion, 7);
+    expect(LocalDatabase.databaseVersion, 8);
     expect(LocalDatabase.recordLimit, 1500);
   });
 

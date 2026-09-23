@@ -278,7 +278,7 @@ class _HomePageState extends State<HomePage>
                     children: [
                       const Expanded(
                         child: Text(
-                          '威威给你的蓝色绣球花',
+                          '给你的蓝色绣球花',
                           style: TextStyle(
                             color: AppColors.deepBlue,
                             fontSize: 13,

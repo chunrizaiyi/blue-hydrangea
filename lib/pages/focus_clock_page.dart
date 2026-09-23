@@ -4182,7 +4182,7 @@ class _ClockTopBar extends StatelessWidget {
               ),
             ),
             Text(
-              '威威陪你认真一会儿',
+              '给你认真一会儿',
               style: TextStyle(color: Color(0xFF8996B1), fontSize: 12),
             ),
           ],
