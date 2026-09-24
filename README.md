@@ -91,6 +91,22 @@ test/                            模型、统计、计时桥与白噪音测试
 - audioplayers、image_picker
 - Gradle、固定签名、自动递增版本号
 
+## 测试与质量记录
+
+项目按阶段建立测试资料，文档与源码一同纳入版本管理。第一阶段完成了功能范围梳理、需求追踪和 60 条测试用例设计，并执行了现有自动化测试基线：31 项 Dart 测试通过，Flutter 静态检查无问题。新增的 60 条用例尚未执行，其结果将在后续阶段报告中记录。
+
+- [测试计划与执行原则](docs/testing/01-测试计划.md)
+- [需求追踪矩阵](docs/testing/02-需求追踪矩阵.md)
+- [功能测试用例](docs/testing/03-测试用例.md)
+- [阶段一基线执行记录](docs/testing/04-阶段一基线执行记录.md)
+
+本地复核命令：
+
+```powershell
+flutter test --no-pub -r expanded
+flutter analyze --no-pub
+```
+
 ## 本地运行
 
 建议使用满足当前锁文件要求的 Flutter 3.44.0 或更高版本、Dart 3.12.0 或更高版本，并准备 Android SDK 与 Java 17。

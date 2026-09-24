@@ -1,0 +1,48 @@
+执行日期：2026-09-24（北京时间）
+源码提交：840c13ab32a156c22245aa76184d216ce89db9d1
+工作目录：C:\Users\12713\Documents\blue_hydrangea_work
+Flutter：3.44.7 stable
+Dart：3.12.2
+
+命令：flutter test --no-pub -r expanded
+退出码：0
+
+00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart
+00:00 +0: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 专注记录可无损转换为数据库字段
+00:00 +1: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 空细分类存为 null，未知旧模式安全回退为正计时
+00:00 +2: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 倒计时计划与幂等键可无损转换，并可推导达成和额外坚持
+00:00 +3: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 数据库升级版本和专注记录上限固定
+00:00 +4: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 今天、自然周、自然月与反向自定义日期都能生成正确范围
+00:00 +5: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 周统计返回总量、均值、每日、分类和上一等长周期变化
+00:00 +6: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 模式与分类筛选同时影响统计和连续专注天数
+00:00 +7: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 连续天数允许今天未记录时延续昨天，最长连续另行保留
+00:00 +8: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: 倒计时统计区分总数、可评估数、达成率与额外坚持
+00:00 +9: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: completed focus for today includes all modes and clips midnight
+00:00 +10: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_statistics_test.dart: completed focus excludes restored current session key
+00:00 +11: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_timer_bridge_test.dart: native timer snapshot preserves completed focus base for today
+00:00 +12: C:/Users/12713/Documents/blue_hydrangea_work/test/focus_timer_bridge_test.dart: negative native today base is safely normalized to zero
+00:00 +13: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 心情、回忆和视角记录统一最多保存 1500 条
+00:00 +14: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 纪念日最多保存 100 条
+00:00 +15: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 纪念日当天算第 1 天并自动生成温柔文案
+00:00 +16: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 未来纪念日显示剩余天数，同月同日下一年识别为周年
+00:00 +17: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 温柔记录可以从数据库字段恢复
+00:00 +18: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 回忆可以转换为本地存储字段
+00:00 +19: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 回忆内容清空后仍保留日期记录
+00:00 +20: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 旧版单张回忆照片会兼容为多图列表
+00:00 +21: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 多图回忆保持顺序并将第一张镜像为封面
+00:00 +22: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 多图路径会保序去重、忽略空值并限制为 20 张
+00:00 +23: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 心情备注清空后仍可按原记录更新
+00:00 +24: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 心情统计按自然周汇总四类心情
+00:00 +25: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 心情统计按自然月汇总且不混入下个月
+00:00 +26: C:/Users/12713/Documents/blue_hydrangea_work/test/garden_models_test.dart: 心情时段按真实系统时刻覆盖完整一天
+00:00 +27: C:/Users/12713/Documents/blue_hydrangea_work/test/white_noise_service_test.dart: audio/gentle_rain_50m.ogg 使用本地 OGG 长音轨
+00:00 +28: C:/Users/12713/Documents/blue_hydrangea_work/test/white_noise_service_test.dart: audio/gentle_ocean_50m.ogg 使用本地 OGG 长音轨
+00:00 +29: C:/Users/12713/Documents/blue_hydrangea_work/test/white_noise_service_test.dart: audio/gentle_breeze_50m.ogg 使用本地 OGG 长音轨
+00:00 +30: C:/Users/12713/Documents/blue_hydrangea_work/test/white_noise_service_test.dart: 新增的舒缓音色由长音轨分层混合
+00:00 +31: All tests passed!
+
+命令：flutter analyze --no-pub
+退出码：0
+
+Analyzing blue_hydrangea_work...
+No issues found! (ran in 20.5s)
