@@ -1,0 +1,28 @@
+阶段三执行摘要（2026-09-25）
+
+基线提交：e2ec6890da1bc26429883dd46358830f2fda5a20
+设备：emulator-5554，Android 16 / API 36
+隔离包名：com.example.blue_hydrangea.stage3test
+真机：执行开始时识别到小米 23127PN0CC，随后断开；未在手机上执行测试。
+
+1. C-05 倒计时息屏到点
+执行：flutter test integration_test/native_timer_system_test.dart -d emulator-5554 --no-pub -r expanded
+权限：notification=true，exactAlarm=true，promoted=false
+倒计时：30 秒；开始后用 adb 将屏幕切至 Dozing。
+第一次：计划到点 1790319404362 ms，服务完成 1790319404364 ms，偏差 +2 ms。
+第二次：计划到点 1790320980624 ms，服务完成 1790320980625 ms，偏差 +1 ms。
+两次状态均为 overtime，提醒激活均为 true，进程退出码均为 0。
+结果：同一用例在模拟器上通过两次；不代表真机稳定性。
+
+2. C-07 系统通知暂停与继续
+执行：flutter test integration_test/native_notification_actions_test.dart -d emulator-5554 --no-pub -r expanded
+实际按下模拟器通知中的“暂停”和“继续”。
+暂停后：status=paused，remainingMs=544932；2 秒后剩余时间未变化。
+继续后：status=running，remainingMs=544483；会话编号未变化。
+结果：1 项通过，进程退出码 0。
+
+3. 回归与静态检查
+flutter test --no-pub -r compact：43 项通过，退出码 0。
+flutter analyze --no-pub：No issues found，退出码 0。
+
+试运行说明：C-05 首轮因脚本在会话创建前读取空状态而失败；C-07 前两轮未实际按到通知按钮而超时。修正测试步骤后通过。试运行不计入产品通过或失败数。

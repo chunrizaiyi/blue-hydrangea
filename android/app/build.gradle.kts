@@ -23,6 +23,8 @@ val automaticVersionCode =
 val automaticVersionName =
     "1.0.${LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd.HHmmss"))}"
 val xiaomiAppId = providers.gradleProperty("XIAOMI_APP_ID").orElse("0").get()
+val isolatedTestBuild = providers.environmentVariable("BLUE_HYDRANGEA_ISOLATED_TEST")
+    .orElse("0").get() == "1"
 
 android {
     namespace = "com.example.blue_hydrangea"
@@ -42,6 +44,7 @@ android {
         versionName = automaticVersionName
         manifestPlaceholders["xiaomiAppId"] = xiaomiAppId
         manifestPlaceholders["xiaomiBuildDebug"] = "false"
+        manifestPlaceholders["appLabel"] = "给你的蓝色绣球花"
     }
 
     signingConfigs {
@@ -57,6 +60,10 @@ android {
         debug {
             signingConfig = signingConfigs.getByName("fixedUpdate")
             manifestPlaceholders["xiaomiBuildDebug"] = "true"
+            if (isolatedTestBuild) {
+                applicationIdSuffix = ".stage3test"
+                manifestPlaceholders["appLabel"] = "蓝色绣球花·测试"
+            }
         }
         release {
             signingConfig = signingConfigs.getByName("fixedUpdate")
