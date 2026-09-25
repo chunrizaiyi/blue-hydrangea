@@ -4,12 +4,16 @@ import 'package:sqflite/sqflite.dart';
 import '../models/garden_models.dart';
 
 class LocalDatabase {
-  LocalDatabase._();
+  LocalDatabase._() : _path = null;
+
+  /// Creates an isolated instance for repeatable database tests.
+  LocalDatabase.atPath(String path) : _path = path;
 
   static final instance = LocalDatabase._();
   static const int databaseVersion = 8;
   static const int recordLimit = 1500;
   static const int anniversaryLimit = 100;
+  final String? _path;
   Future<Database>? _databaseFuture;
 
   /// Keep the in-flight open operation as well as the opened database.
@@ -32,9 +36,17 @@ class LocalDatabase {
   }
 
   Future<Database> _open() async {
+    final path = _path;
+    if (path != null) return openAtPath(path);
     final root = await getDatabasesPath();
+    return openAtPath(p.join(root, 'blue_hydrangea.db'));
+  }
+
+  /// Opens an isolated database with the same schema and migrations as the app.
+  /// Tests pass a temporary path so that personal app data is never modified.
+  static Future<Database> openAtPath(String path) {
     return openDatabase(
-      p.join(root, 'blue_hydrangea.db'),
+      path,
       version: databaseVersion,
       onCreate: (db, version) async {
         await db.execute('''

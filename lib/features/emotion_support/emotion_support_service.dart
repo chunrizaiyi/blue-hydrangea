@@ -102,9 +102,13 @@ class EmotionSupportResponse {
 
 class EmotionSupportService {
   static const model = 'deepseek-flash';
-  static final _endpoint = Uri.parse(
-    'https://api.deepseek.com/chat/completions',
-  );
+  EmotionSupportService({Uri? endpoint, Future<String?> Function()? readKey})
+    : _endpoint =
+          endpoint ?? Uri.parse('https://api.deepseek.com/chat/completions'),
+      _readKey = readKey ?? DailyPhraseCredentials.read;
+
+  final Uri _endpoint;
+  final Future<String?> Function() _readKey;
 
   HttpClient? _activeClient;
   int _revision = 0;
@@ -218,7 +222,7 @@ class EmotionSupportService {
     required int maxTokens,
     required double temperature,
   }) async {
-    final key = await DailyPhraseCredentials.read();
+    final key = await _readKey();
     if (revision != _revision) {
       throw const EmotionSupportException('本次整理已取消。');
     }
