@@ -1,0 +1,28 @@
+2026-09-26T14:37:47+08:00 RUN_METADATA {"startedAt": "2026-09-26T14:37:46+08:00", "test": "integration_test/device_garden_ui_test.dart", "deviceAlias": "xiaomi14", "seconds": 30, "repeat": 1, "screenOff": false, "plainName": "D-01", "physicalTaps": false, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T14:37:48+08:00 
+2026-09-26T14:37:48+08:00 ┌─────────────────────────────────────────────────────────┐
+2026-09-26T14:37:48+08:00 │ A new version of Flutter is available!                  │
+2026-09-26T14:37:48+08:00 │                                                         │
+2026-09-26T14:37:48+08:00 │ To update to the latest version, run "flutter upgrade". │
+2026-09-26T14:37:48+08:00 └─────────────────────────────────────────────────────────┘
+2026-09-26T14:37:50+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T14:37:51+08:00 00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_garden_ui_test.dart
+2026-09-26T14:37:55+08:00 Running Gradle task 'assembleDebug'...
+2026-09-26T14:37:55+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T14:38:08+08:00 Running Gradle task 'assembleDebug'...                             17.2s
+2026-09-26T14:38:09+08:00 √ Built build\app\outputs\flutter-apk\app-debug.apk
+2026-09-26T14:38:24+08:00 Installing build\app\outputs\flutter-apk\app-debug.apk...          15.5s
+2026-09-26T14:38:24+08:00 Error: ADB exited with exit code 1
+2026-09-26T14:38:24+08:00 Performing Streamed Install
+2026-09-26T14:38:24+08:00 
+2026-09-26T14:38:24+08:00 adb.exe: failed to install C:\Users\12713\Documents\blue_hydrangea_work\build\app\outputs\flutter-apk\app-debug.apk: Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]
+2026-09-26T14:38:24+08:00 00:00 +0 -1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_garden_ui_test.dart [E]
+2026-09-26T14:38:24+08:00   Failed to load "C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_garden_ui_test.dart": Unable to start the app on the device.
+2026-09-26T14:38:24+08:00 00:00 +0 -1: Some tests failed.
+2026-09-26T14:38:24+08:00 
+2026-09-26T14:38:24+08:00 Failing tests:
+2026-09-26T14:38:24+08:00   C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_garden_ui_test.dart: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_garden_ui_test.dart
+2026-09-26T14:38:25+08:00 adb uninstall failed: ProcessException: Process exited abnormally with exit code 1:
+2026-09-26T14:38:25+08:00 Failure [DELETE_FAILED_INTERNAL_ERROR]
+2026-09-26T14:38:25+08:00   Command: C:\Users\12713\develop\blue_hydrangea_tools\android-sdk\platform-tools\adb.exe -s xiaomi14 uninstall com.example.blue_hydrangea.stage3test
+2026-09-26T14:38:25+08:00 RUN_EXIT_CODE=1

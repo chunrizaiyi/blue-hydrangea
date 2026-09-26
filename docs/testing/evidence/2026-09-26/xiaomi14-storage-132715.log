@@ -1,0 +1,18 @@
+2026-09-26T13:27:15+08:00 RUN_METADATA {"startedAt": "2026-09-26T13:27:15+08:00", "test": "integration_test/device_storage_test.dart", "deviceAlias": "xiaomi14", "seconds": 30, "repeat": 1, "screenOff": false, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T13:27:17+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:27:17+08:00 00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_storage_test.dart
+2026-09-26T13:27:22+08:00 Running Gradle task 'assembleDebug'...
+2026-09-26T13:27:22+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:27:35+08:00 Running Gradle task 'assembleDebug'...                             17.1s
+2026-09-26T13:27:35+08:00 √ Built build\app\outputs\flutter-apk\app-debug.apk
+2026-09-26T13:27:46+08:00 Installing build\app\outputs\flutter-apk\app-debug.apk...           9.9s
+2026-09-26T13:27:47+08:00 00:00 +0: (setUpAll)
+2026-09-26T13:27:47+08:00 00:00 +0: A-02 native credential roundtrip replacement and tamper rejection
+2026-09-26T13:27:48+08:00 00:00 +1: LIMIT tender_notes native SQLite boundary and rejected insert preservation
+2026-09-26T13:27:48+08:00 00:00 +2: LIMIT memories native SQLite boundary and rejected insert preservation
+2026-09-26T13:27:48+08:00 00:00 +3: LIMIT moods native SQLite boundary and rejected insert preservation
+2026-09-26T13:27:48+08:00 00:00 +4: LIMIT anniversaries native SQLite boundary and rejected insert preservation
+2026-09-26T13:27:48+08:00 00:00 +5: M-04 M-10 ordered images edit and reopen with real private files
+2026-09-26T13:27:48+08:00 00:01 +6: (tearDownAll)
+2026-09-26T13:27:49+08:00 00:01 +6: All tests passed!
+2026-09-26T13:27:49+08:00 RUN_EXIT_CODE=0

@@ -1,0 +1,6 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing blue_hydrangea_work...                                
+
+   info - The import of 'package:flutter/gestures.dart' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart'. Try removing the import directive - integration_test\device_clock_ui_test.dart:6:8 - unnecessary_import
+
+1 issue found. (ran in 17.0s)

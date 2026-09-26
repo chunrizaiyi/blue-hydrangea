@@ -1,0 +1,16 @@
+[
+  {
+    "name": "regression",
+    "startedAt": "2026-09-26T13:44:07.277747+08:00",
+    "finishedAt": "2026-09-26T13:46:41.083356+08:00",
+    "exitCode": 1,
+    "log": "host-regression-134407.log"
+  },
+  {
+    "name": "analyze",
+    "startedAt": "2026-09-26T13:46:41.083516+08:00",
+    "finishedAt": "2026-09-26T13:47:13.287831+08:00",
+    "exitCode": 1,
+    "log": "host-analyze-134641.log"
+  }
+]

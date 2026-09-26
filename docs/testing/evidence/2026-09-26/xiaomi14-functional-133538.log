@@ -1,0 +1,79 @@
+2026-09-26T13:35:38+08:00 RUN_METADATA {"startedAt": "2026-09-26T13:35:38+08:00", "test": "integration_test/device_functional_suite_test.dart", "deviceAlias": "xiaomi14", "seconds": 30, "repeat": 1, "screenOff": false, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T13:35:39+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:35:40+08:00 00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_functional_suite_test.dart
+2026-09-26T13:35:44+08:00 Running Gradle task 'assembleDebug'...
+2026-09-26T13:35:44+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:35:57+08:00 Running Gradle task 'assembleDebug'...                             16.7s
+2026-09-26T13:35:57+08:00 √ Built build\app\outputs\flutter-apk\app-debug.apk
+2026-09-26T13:36:09+08:00 Installing build\app\outputs\flutter-apk\app-debug.apk...          11.3s
+2026-09-26T13:36:11+08:00 00:00 +0: (setUpAll)
+2026-09-26T13:36:11+08:00 00:00 +0: A-02 native credential roundtrip replacement and tamper rejection
+2026-09-26T13:36:11+08:00 00:00 +1: LIMIT tender_notes native SQLite boundary and rejected insert preservation
+2026-09-26T13:36:11+08:00 00:00 +2: LIMIT memories native SQLite boundary and rejected insert preservation
+2026-09-26T13:36:11+08:00 00:00 +3: LIMIT moods native SQLite boundary and rejected insert preservation
+2026-09-26T13:36:12+08:00 00:00 +4: LIMIT anniversaries native SQLite boundary and rejected insert preservation
+2026-09-26T13:36:12+08:00 00:01 +5: M-04 M-10 ordered images edit and reopen with real private files
+2026-09-26T13:36:12+08:00 00:01 +6: 阶段二：回忆与心情新增后立即展示，切换页面后数据仍在
+2026-09-26T13:36:20+08:00 00:09 +7: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:36:30+08:00 ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+2026-09-26T13:36:30+08:00 The following TestFailure was thrown running a test:
+2026-09-26T13:36:30+08:00 Expected: a value greater than <571.3333333333334>
+2026-09-26T13:36:30+08:00   Actual: <531.3333333333334>
+2026-09-26T13:36:30+08:00    Which: is not a value greater than <571.3333333333334>
+2026-09-26T13:36:30+08:00 
+2026-09-26T13:36:30+08:00 When the exception was thrown, this was the stack:
+2026-09-26T13:36:30+08:00 #4      main.<anonymous closure> (file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart:88:13)
+2026-09-26T13:36:30+08:00 <asynchronous suspension>
+2026-09-26T13:36:30+08:00 #5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+2026-09-26T13:36:30+08:00 <asynchronous suspension>
+2026-09-26T13:36:30+08:00 #6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1952:5)
+2026-09-26T13:36:30+08:00 <asynchronous suspension>
+2026-09-26T13:36:30+08:00 <asynchronous suspension>
+2026-09-26T13:36:30+08:00 (elided one frame from package:stack_trace)
+2026-09-26T13:36:30+08:00 
+2026-09-26T13:36:30+08:00 This was caught by the test expectation on the following line:
+2026-09-26T13:36:30+08:00   file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart line 88
+2026-09-26T13:36:30+08:00 The test description was:
+2026-09-26T13:36:30+08:00   C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:36:30+08:00 ════════════════════════════════════════════════════════════════════════════════════════════════════
+2026-09-26T13:36:30+08:00 00:19 +7 -1: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions [E]
+2026-09-26T13:36:30+08:00   Test failed. See exception logs above.
+2026-09-26T13:36:30+08:00   The test description was: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:36:30+08:00 
+2026-09-26T13:36:30+08:00 00:19 +7 -1: C-03 stopwatch pause resume classification and single persistence
+2026-09-26T13:36:57+08:00 DEVICE_UI_CHECKPOINT stopwatch-classification
+2026-09-26T13:36:57+08:00 HOST_SCREENSHOT_SKIPPED test application is not foreground
+2026-09-26T13:37:02+08:00 00:51 +8 -1: C-04 C-08 countdown custom validation pause early end and silent overtime
+2026-09-26T13:37:12+08:00 ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+2026-09-26T13:37:12+08:00 The following assertion was thrown running a test:
+2026-09-26T13:37:12+08:00 'package:flutter_test/src/test_text_input.dart': Failed assertion: line 163 pos 12: 'isRegistered':
+2026-09-26T13:37:12+08:00 is not true.
+2026-09-26T13:37:12+08:00 
+2026-09-26T13:37:12+08:00 When the exception was thrown, this was the stack:
+2026-09-26T13:37:12+08:00 #2      TestTextInput.hide (package:flutter_test/src/test_text_input.dart:163:12)
+2026-09-26T13:37:12+08:00 #3      main.<anonymous closure>.configure (file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart:196:30)
+2026-09-26T13:37:12+08:00 <asynchronous suspension>
+2026-09-26T13:37:12+08:00 #4      main.<anonymous closure> (file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart:204:9)
+2026-09-26T13:37:12+08:00 <asynchronous suspension>
+2026-09-26T13:37:12+08:00 #5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+2026-09-26T13:37:12+08:00 <asynchronous suspension>
+2026-09-26T13:37:12+08:00 #6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1952:5)
+2026-09-26T13:37:12+08:00 <asynchronous suspension>
+2026-09-26T13:37:12+08:00 <asynchronous suspension>
+2026-09-26T13:37:12+08:00 (elided 3 frames from class _AssertionError and package:stack_trace)
+2026-09-26T13:37:12+08:00 
+2026-09-26T13:37:12+08:00 The test description was:
+2026-09-26T13:37:12+08:00   C-04 C-08 countdown custom validation pause early end and silent overtime
+2026-09-26T13:37:12+08:00 ════════════════════════════════════════════════════════════════════════════════════════════════════
+2026-09-26T13:37:12+08:00 01:01 +8 -2: C-04 C-08 countdown custom validation pause early end and silent overtime [E]
+2026-09-26T13:37:12+08:00   Test failed. See exception logs above.
+2026-09-26T13:37:12+08:00   The test description was: C-04 C-08 countdown custom validation pause early end and silent overtime
+2026-09-26T13:37:12+08:00 
+2026-09-26T13:37:12+08:00 01:01 +8 -2: C-09 pomodoro early completion produces one record
+2026-09-26T13:37:31+08:00 01:20 +9 -2: (tearDownAll)
+2026-09-26T13:37:31+08:00 01:20 +9 -2: Some tests failed.
+2026-09-26T13:37:31+08:00 
+2026-09-26T13:37:31+08:00 Failing tests:
+2026-09-26T13:37:31+08:00   C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_functional_suite_test.dart: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:37:31+08:00   C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_functional_suite_test.dart: C-04 C-08 countdown custom validation pause early end and silent overtime
+2026-09-26T13:37:32+08:00 RUN_EXIT_CODE=1

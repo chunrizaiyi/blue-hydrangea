@@ -1,0 +1,9 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+Analyzing blue_hydrangea_work...                                
+
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\device_clock_ui_test.dart:116:15 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\device_clock_ui_test.dart:183:13 - curly_braces_in_flow_control_structures
+   info - Statements in an if should be enclosed in a block. Try wrapping the statement in a block - integration_test\device_clock_ui_test.dart:272:11 - curly_braces_in_flow_control_structures
+   info - The import of 'dart:async' is unnecessary because all of the used elements are also provided by the import of 'package:flutter_test/flutter_test.dart'. Try removing the import directive - test\ai_transport_resilience_test.dart:1:8 - unnecessary_import
+
+4 issues found. (ran in 27.7s)

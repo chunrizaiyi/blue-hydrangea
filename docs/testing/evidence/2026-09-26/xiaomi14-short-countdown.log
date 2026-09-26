@@ -1,0 +1,16 @@
+2026-09-26T13:21:11+08:00 RUN_METADATA {"startedAt": "2026-09-26T13:21:10+08:00", "test": "integration_test/native_timer_system_test.dart", "deviceAlias": "xiaomi14", "seconds": 30, "repeat": 3, "screenOff": true, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T13:21:12+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:21:13+08:00 00:00 +0: loading C:/Users/12713/Documents/给宝宝的一朵小蓝花/integration_test/native_timer_system_test.dart
+2026-09-26T13:21:13+08:00 09-26 13:21:13.461 17000 33124 W ziparchive: Unable to open 'C:\Users\12713\Documents\给宝宝的一朵小蓝花\build\app\outputs\flutter-apk\app-debug.apk': Illegal byte sequence
+2026-09-26T13:21:13+08:00 09-26 13:21:13.461 17000 33124 W zipro   : Error opening archive C:\Users\12713\Documents\给宝宝的一朵小蓝花\build\app\outputs\flutter-apk\app-debug.apk: I/O error
+2026-09-26T13:21:13+08:00 ERROR: dump failed because resource AndroidManifest.xml not found
+2026-09-26T13:21:13+08:00 Failed to extract manifest from APK: ProcessException: The command failed with exit code 1
+2026-09-26T13:21:13+08:00   Command: C:\Users\12713\develop\blue_hydrangea_tools\android-sdk\build-tools\36.0.0\aapt dump xmltree C:\Users\12713\Documents\给宝宝的一朵小蓝花\build\app\outputs\flutter-apk\app-debug.apk AndroidManifest.xml.
+2026-09-26T13:21:13+08:00 00:00 +0 -1: loading C:/Users/12713/Documents/给宝宝的一朵小蓝花/integration_test/native_timer_system_test.dart [E]
+2026-09-26T13:21:13+08:00   Failed to load "C:/Users/12713/Documents/给宝宝的一朵小蓝花/integration_test/native_timer_system_test.dart": No application found for TargetPlatform.android_arm64.
+2026-09-26T13:21:13+08:00 00:00 +0 -1: Some tests failed.
+2026-09-26T13:21:13+08:00 
+2026-09-26T13:21:13+08:00 Failing tests:
+2026-09-26T13:21:13+08:00   C:/Users/12713/Documents/给宝宝的一朵小蓝花/integration_test/native_timer_system_test.dart: loading C:/Users/12713/Documents/给宝宝的一朵小蓝花/integration_test/native_timer_system_test.dart
+2026-09-26T13:21:14+08:00 HOST_WAKE returnCode=0
+2026-09-26T13:21:14+08:00 RUN_EXIT_CODE=1

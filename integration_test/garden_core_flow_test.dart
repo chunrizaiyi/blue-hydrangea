@@ -3,11 +3,16 @@ import 'package:blue_hydrangea/services/local_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:path_provider/path_provider.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('阶段二：回忆与心情新增后立即展示，切换页面后数据仍在', (tester) async {
+    expect(
+      (await getApplicationSupportDirectory()).path,
+      contains('com.example.blue_hydrangea.stage3test/'),
+    );
     const memoryMarker = '阶段二虚构回忆样本-20260924';
     const moodMarker = '阶段二虚构心情样本-20260924';
     final store = LocalDatabase.instance;

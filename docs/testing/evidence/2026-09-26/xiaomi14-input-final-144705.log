@@ -1,0 +1,173 @@
+2026-09-26T14:47:05+08:00 RUN_METADATA {"startedAt": "2026-09-26T14:47:05+08:00", "test": "integration_test/device_followup_suite_test.dart", "deviceAlias": "xiaomi14", "seconds": 30, "repeat": 1, "screenOff": false, "plainName": null, "testPattern": "[DC]-01", "physicalTaps": true, "nativeText": true, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T14:47:06+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T14:47:07+08:00 00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:47:11+08:00 Running Gradle task 'assembleDebug'...
+2026-09-26T14:47:11+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T14:47:24+08:00 Running Gradle task 'assembleDebug'...                             16.9s
+2026-09-26T14:47:25+08:00 √ Built build\app\outputs\flutter-apk\app-debug.apk
+2026-09-26T14:47:31+08:00 Installing build\app\outputs\flutter-apk\app-debug.apk...           6.2s
+2026-09-26T14:47:33+08:00 00:00 +0: D-01 D-02 D-03 four moods append edit empty and delete confirmation
+2026-09-26T14:47:39+08:00 DEVICE_TEXT_INPUT value=stage3-mood-0
+2026-09-26T14:47:40+08:00 HOST_TEXT_INPUT returnCode=0
+2026-09-26T14:47:44+08:00 DEVICE_MOOD_SAVED mood=开心 note=stage3-mood-0
+2026-09-26T14:47:46+08:00 DEVICE_TEXT_INPUT value=stage3-mood-1
+2026-09-26T14:47:46+08:00 HOST_TEXT_INPUT returnCode=0
+2026-09-26T14:47:50+08:00 DEVICE_MOOD_SAVED mood=普通 note=stage3-mood-1
+2026-09-26T14:47:52+08:00 DEVICE_TEXT_INPUT value=stage3-mood-2
+2026-09-26T14:47:52+08:00 HOST_TEXT_INPUT returnCode=0
+2026-09-26T14:47:56+08:00 DEVICE_MOOD_SAVED mood=有点累 note=stage3-mood-2
+2026-09-26T14:47:58+08:00 DEVICE_TEXT_INPUT value=stage3-mood-3
+2026-09-26T14:47:58+08:00 HOST_TEXT_INPUT returnCode=0
+2026-09-26T14:48:02+08:00 DEVICE_MOOD_SAVED mood=不开心 note=stage3-mood-3
+2026-09-26T14:48:04+08:00 DEVICE_UI_CHECKPOINT mood-edit-empty
+2026-09-26T14:48:04+08:00 HOST_SCREENSHOT xiaomi14-input-final-144705-mood-edit-empty.png
+2026-09-26T14:48:14+08:00 00:41 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:20+08:00 DEVICE_DOUBLE_TAP x=1726 y=639 label=enter-正计时-0
+2026-09-26T14:48:20+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:20+08:00 00:47 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:20+08:00 DEVICE_POINTER label=enter-正计时-0 type=PointerDownEvent timeUs=2805470581000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:20+08:00 DEVICE_POINTER label=enter-正计时-0 type=PointerUpEvent timeUs=2805470581000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:20+08:00 DEVICE_POINTER label=enter-正计时-0 type=PointerDownEvent timeUs=2805470768000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:20+08:00 DEVICE_POINTER label=enter-正计时-0 type=PointerUpEvent timeUs=2805470768000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:24+08:00 00:50 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:24+08:00 DEVICE_DOUBLE_TAP x=1408 y=525 label=leave-正计时-0
+2026-09-26T14:48:24+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:24+08:00 00:51 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:24+08:00 DEVICE_POINTER label=leave-正计时-0 type=PointerDownEvent timeUs=2805474510000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:24+08:00 DEVICE_POINTER label=leave-正计时-0 type=PointerUpEvent timeUs=2805474510000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:24+08:00 DEVICE_POINTER label=leave-正计时-0 type=PointerDownEvent timeUs=2805474671000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:24+08:00 DEVICE_POINTER label=leave-正计时-0 type=PointerUpEvent timeUs=2805474671000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:27+08:00 00:54 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:27+08:00 DEVICE_DOUBLE_TAP x=1726 y=639 label=enter-正计时-1
+2026-09-26T14:48:28+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:28+08:00 00:55 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:28+08:00 DEVICE_POINTER label=enter-正计时-1 type=PointerDownEvent timeUs=2805478388000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:28+08:00 DEVICE_POINTER label=enter-正计时-1 type=PointerUpEvent timeUs=2805478388000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:28+08:00 DEVICE_POINTER label=enter-正计时-1 type=PointerDownEvent timeUs=2805478543000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:28+08:00 DEVICE_POINTER label=enter-正计时-1 type=PointerUpEvent timeUs=2805478543000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:31+08:00 00:58 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:31+08:00 DEVICE_DOUBLE_TAP x=1408 y=525 label=leave-正计时-1
+2026-09-26T14:48:32+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:32+08:00 00:58 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:32+08:00 DEVICE_POINTER label=leave-正计时-1 type=PointerDownEvent timeUs=2805482249000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:32+08:00 DEVICE_POINTER label=leave-正计时-1 type=PointerUpEvent timeUs=2805482249000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:32+08:00 DEVICE_POINTER label=leave-正计时-1 type=PointerDownEvent timeUs=2805482413000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:32+08:00 DEVICE_POINTER label=leave-正计时-1 type=PointerUpEvent timeUs=2805482413000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:35+08:00 01:02 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:35+08:00 DEVICE_DOUBLE_TAP x=1726 y=639 label=enter-正计时-2
+2026-09-26T14:48:36+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:36+08:00 01:02 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:36+08:00 DEVICE_POINTER label=enter-正计时-2 type=PointerDownEvent timeUs=2805486222000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:36+08:00 DEVICE_POINTER label=enter-正计时-2 type=PointerUpEvent timeUs=2805486222000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:36+08:00 DEVICE_POINTER label=enter-正计时-2 type=PointerDownEvent timeUs=2805486387000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:36+08:00 DEVICE_POINTER label=enter-正计时-2 type=PointerUpEvent timeUs=2805486387000 x=575.3333333333334 y=213.0
+2026-09-26T14:48:39+08:00 01:06 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:39+08:00 DEVICE_DOUBLE_TAP x=1408 y=525 label=leave-正计时-2
+2026-09-26T14:48:40+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:40+08:00 01:06 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:40+08:00 DEVICE_POINTER label=leave-正计时-2 type=PointerDownEvent timeUs=2805490166000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:40+08:00 DEVICE_POINTER label=leave-正计时-2 type=PointerUpEvent timeUs=2805490166000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:40+08:00 DEVICE_POINTER label=leave-正计时-2 type=PointerDownEvent timeUs=2805490341000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:40+08:00 DEVICE_POINTER label=leave-正计时-2 type=PointerUpEvent timeUs=2805490341000 x=469.3333333333333 y=175.0
+2026-09-26T14:48:45+08:00 01:12 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:45+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-倒计时-0
+2026-09-26T14:48:45+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:45+08:00 01:12 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:45+08:00 DEVICE_POINTER label=enter-倒计时-0 type=PointerDownEvent timeUs=2805495931000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:45+08:00 DEVICE_POINTER label=enter-倒计时-0 type=PointerUpEvent timeUs=2805495931000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:45+08:00 DEVICE_POINTER label=enter-倒计时-0 type=PointerDownEvent timeUs=2805496092000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:45+08:00 DEVICE_POINTER label=enter-倒计时-0 type=PointerUpEvent timeUs=2805496092000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:49+08:00 01:16 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:49+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-倒计时-0
+2026-09-26T14:48:49+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:49+08:00 01:16 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:49+08:00 DEVICE_POINTER label=leave-倒计时-0 type=PointerDownEvent timeUs=2805499762000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:49+08:00 DEVICE_POINTER label=leave-倒计时-0 type=PointerUpEvent timeUs=2805499762000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:49+08:00 DEVICE_POINTER label=leave-倒计时-0 type=PointerDownEvent timeUs=2805499920000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:49+08:00 DEVICE_POINTER label=leave-倒计时-0 type=PointerUpEvent timeUs=2805499920000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:53+08:00 01:20 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:53+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-倒计时-1
+2026-09-26T14:48:53+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:53+08:00 01:20 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:53+08:00 DEVICE_POINTER label=enter-倒计时-1 type=PointerDownEvent timeUs=2805503713000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:53+08:00 DEVICE_POINTER label=enter-倒计时-1 type=PointerUpEvent timeUs=2805503713000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:53+08:00 DEVICE_POINTER label=enter-倒计时-1 type=PointerDownEvent timeUs=2805503877000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:53+08:00 DEVICE_POINTER label=enter-倒计时-1 type=PointerUpEvent timeUs=2805503877000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:48:57+08:00 01:24 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:48:57+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-倒计时-1
+2026-09-26T14:48:57+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:48:57+08:00 01:24 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:48:57+08:00 DEVICE_POINTER label=leave-倒计时-1 type=PointerDownEvent timeUs=2805507606000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:57+08:00 DEVICE_POINTER label=leave-倒计时-1 type=PointerUpEvent timeUs=2805507606000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:57+08:00 DEVICE_POINTER label=leave-倒计时-1 type=PointerDownEvent timeUs=2805507780000 x=469.3333333333333 y=153.0
+2026-09-26T14:48:57+08:00 DEVICE_POINTER label=leave-倒计时-1 type=PointerUpEvent timeUs=2805507780000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:01+08:00 01:28 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:01+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-倒计时-2
+2026-09-26T14:49:01+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:01+08:00 01:28 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:01+08:00 DEVICE_POINTER label=enter-倒计时-2 type=PointerDownEvent timeUs=2805511573000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:01+08:00 DEVICE_POINTER label=enter-倒计时-2 type=PointerUpEvent timeUs=2805511573000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:01+08:00 DEVICE_POINTER label=enter-倒计时-2 type=PointerDownEvent timeUs=2805511743000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:01+08:00 DEVICE_POINTER label=enter-倒计时-2 type=PointerUpEvent timeUs=2805511743000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:05+08:00 01:32 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:05+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-倒计时-2
+2026-09-26T14:49:05+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:05+08:00 01:32 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:05+08:00 DEVICE_POINTER label=leave-倒计时-2 type=PointerDownEvent timeUs=2805515541000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:05+08:00 DEVICE_POINTER label=leave-倒计时-2 type=PointerUpEvent timeUs=2805515541000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:05+08:00 DEVICE_POINTER label=leave-倒计时-2 type=PointerDownEvent timeUs=2805515709000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:05+08:00 DEVICE_POINTER label=leave-倒计时-2 type=PointerUpEvent timeUs=2805515709000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:10+08:00 01:37 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:10+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-番茄钟-0
+2026-09-26T14:49:11+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:11+08:00 01:38 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:11+08:00 DEVICE_POINTER label=enter-番茄钟-0 type=PointerDownEvent timeUs=2805521328000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:11+08:00 DEVICE_POINTER label=enter-番茄钟-0 type=PointerUpEvent timeUs=2805521328000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:11+08:00 DEVICE_POINTER label=enter-番茄钟-0 type=PointerDownEvent timeUs=2805521492000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:11+08:00 DEVICE_POINTER label=enter-番茄钟-0 type=PointerUpEvent timeUs=2805521492000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:14+08:00 01:41 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:14+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-番茄钟-0
+2026-09-26T14:49:15+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:15+08:00 01:42 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:15+08:00 DEVICE_POINTER label=leave-番茄钟-0 type=PointerDownEvent timeUs=2805525333000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:15+08:00 DEVICE_POINTER label=leave-番茄钟-0 type=PointerUpEvent timeUs=2805525333000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:15+08:00 DEVICE_POINTER label=leave-番茄钟-0 type=PointerDownEvent timeUs=2805525500000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:15+08:00 DEVICE_POINTER label=leave-番茄钟-0 type=PointerUpEvent timeUs=2805525500000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:18+08:00 01:45 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:18+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-番茄钟-1
+2026-09-26T14:49:19+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:19+08:00 01:46 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:19+08:00 DEVICE_POINTER label=enter-番茄钟-1 type=PointerDownEvent timeUs=2805529337000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:19+08:00 DEVICE_POINTER label=enter-番茄钟-1 type=PointerUpEvent timeUs=2805529337000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:19+08:00 DEVICE_POINTER label=enter-番茄钟-1 type=PointerDownEvent timeUs=2805529495000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:19+08:00 DEVICE_POINTER label=enter-番茄钟-1 type=PointerUpEvent timeUs=2805529495000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:22+08:00 01:49 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:22+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-番茄钟-1
+2026-09-26T14:49:23+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:23+08:00 01:49 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:23+08:00 DEVICE_POINTER label=leave-番茄钟-1 type=PointerDownEvent timeUs=2805533221000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:23+08:00 DEVICE_POINTER label=leave-番茄钟-1 type=PointerUpEvent timeUs=2805533221000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:23+08:00 DEVICE_POINTER label=leave-番茄钟-1 type=PointerDownEvent timeUs=2805533387000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:23+08:00 DEVICE_POINTER label=leave-番茄钟-1 type=PointerUpEvent timeUs=2805533387000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:26+08:00 01:53 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:26+08:00 DEVICE_DOUBLE_TAP x=1726 y=578 label=enter-番茄钟-2
+2026-09-26T14:49:27+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:27+08:00 01:53 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:27+08:00 DEVICE_POINTER label=enter-番茄钟-2 type=PointerDownEvent timeUs=2805537161000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:27+08:00 DEVICE_POINTER label=enter-番茄钟-2 type=PointerUpEvent timeUs=2805537161000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:27+08:00 DEVICE_POINTER label=enter-番茄钟-2 type=PointerDownEvent timeUs=2805537326000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:27+08:00 DEVICE_POINTER label=enter-番茄钟-2 type=PointerUpEvent timeUs=2805537326000 x=575.3333333333334 y=192.66666666666666
+2026-09-26T14:49:30+08:00 01:57 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:30+08:00 DEVICE_DOUBLE_TAP x=1408 y=459 label=leave-番茄钟-2
+2026-09-26T14:49:31+08:00 HOST_DOUBLE_TAP returnCode=0
+2026-09-26T14:49:31+08:00 01:57 +1: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_followup_suite_test.dart
+2026-09-26T14:49:31+08:00 DEVICE_POINTER label=leave-番茄钟-2 type=PointerDownEvent timeUs=2805541111000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:31+08:00 DEVICE_POINTER label=leave-番茄钟-2 type=PointerUpEvent timeUs=2805541111000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:31+08:00 DEVICE_POINTER label=leave-番茄钟-2 type=PointerDownEvent timeUs=2805541284000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:31+08:00 DEVICE_POINTER label=leave-番茄钟-2 type=PointerUpEvent timeUs=2805541284000 x=469.3333333333333 y=153.0
+2026-09-26T14:49:34+08:00 02:01 +1: C-01 C-02 repeated fullscreen interactions
+2026-09-26T14:49:34+08:00 DEVICE_UI_CHECKPOINT clock-fullscreen-complete
+2026-09-26T14:49:35+08:00 HOST_SCREENSHOT xiaomi14-input-final-144705-clock-fullscreen-complete.png
+2026-09-26T14:49:38+08:00 02:05 +2: (tearDownAll)
+2026-09-26T14:49:38+08:00 02:05 +2: All tests passed!
+2026-09-26T14:49:39+08:00 RUN_EXIT_CODE=0

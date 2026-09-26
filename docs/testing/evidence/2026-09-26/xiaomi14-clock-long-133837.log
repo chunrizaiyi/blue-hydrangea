@@ -1,0 +1,58 @@
+2026-09-26T13:38:37+08:00 RUN_METADATA {"startedAt": "2026-09-26T13:38:37+08:00", "test": "integration_test/device_clock_and_soak_test.dart", "deviceAlias": "xiaomi14", "seconds": 2700, "repeat": 1, "screenOff": true, "model": "23127PN0CC", "android": "16", "systemBuild": "OS3.0.302.0.WNCCNXM", "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b"}
+2026-09-26T13:38:38+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:38:39+08:00 00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_and_soak_test.dart
+2026-09-26T13:38:43+08:00 Running Gradle task 'assembleDebug'...
+2026-09-26T13:38:43+08:00 Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+2026-09-26T13:38:56+08:00 Running Gradle task 'assembleDebug'...                             16.9s
+2026-09-26T13:38:57+08:00 √ Built build\app\outputs\flutter-apk\app-debug.apk
+2026-09-26T13:39:04+08:00 Installing build\app\outputs\flutter-apk\app-debug.apk...           7.3s
+2026-09-26T13:39:06+08:00 00:00 +0: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:39:16+08:00 ══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+2026-09-26T13:39:16+08:00 The following TestFailure was thrown running a test:
+2026-09-26T13:39:16+08:00 Expected: a value greater than <571.3333333333334>
+2026-09-26T13:39:16+08:00   Actual: <531.3333333333334>
+2026-09-26T13:39:16+08:00    Which: is not a value greater than <571.3333333333334>
+2026-09-26T13:39:16+08:00 
+2026-09-26T13:39:16+08:00 When the exception was thrown, this was the stack:
+2026-09-26T13:39:16+08:00 #4      main.<anonymous closure> (file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart:90:13)
+2026-09-26T13:39:16+08:00 <asynchronous suspension>
+2026-09-26T13:39:16+08:00 #5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+2026-09-26T13:39:16+08:00 <asynchronous suspension>
+2026-09-26T13:39:16+08:00 #6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1952:5)
+2026-09-26T13:39:16+08:00 <asynchronous suspension>
+2026-09-26T13:39:16+08:00 <asynchronous suspension>
+2026-09-26T13:39:16+08:00 (elided one frame from package:stack_trace)
+2026-09-26T13:39:16+08:00 
+2026-09-26T13:39:16+08:00 This was caught by the test expectation on the following line:
+2026-09-26T13:39:16+08:00   file:///C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_ui_test.dart line 90
+2026-09-26T13:39:16+08:00 The test description was:
+2026-09-26T13:39:16+08:00   C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:39:16+08:00 ════════════════════════════════════════════════════════════════════════════════════════════════════
+2026-09-26T13:39:16+08:00 00:10 +0 -1: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions [E]
+2026-09-26T13:39:16+08:00   Test failed. See exception logs above.
+2026-09-26T13:39:16+08:00   The test description was: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T13:39:16+08:00 
+2026-09-26T13:39:16+08:00 00:10 +0 -1: C-03 stopwatch pause resume classification and single persistence
+2026-09-26T13:39:43+08:00 DEVICE_UI_CHECKPOINT stopwatch-classification
+2026-09-26T13:39:44+08:00 HOST_SCREENSHOT xiaomi14-clock-long-133837-stopwatch-classification.png
+2026-09-26T13:39:49+08:00 00:43 +1 -1: C-04 C-08 countdown custom validation pause early end and silent overtime
+2026-09-26T13:40:35+08:00 DEVICE_UI_CHECKPOINT countdown-silent-overtime
+2026-09-26T13:40:36+08:00 HOST_SCREENSHOT xiaomi14-clock-long-133837-countdown-silent-overtime.png
+2026-09-26T13:40:41+08:00 DEVICE_UI_CHECKPOINT countdown-reset
+2026-09-26T13:40:42+08:00 HOST_SCREENSHOT xiaomi14-clock-long-133837-countdown-reset.png
+2026-09-26T13:40:45+08:00 01:38 +2 -1: C-09 pomodoro early completion produces one record
+2026-09-26T13:41:03+08:00 01:57 +3 -1: C-05 screen-off native countdown (1/1)
+2026-09-26T13:41:03+08:00 STAGE3_PERMISSIONS notification=true exactAlarm=true promoted=true
+2026-09-26T13:41:03+08:00 STAGE3_STARTED session=stage3-1790401262609 plannedEndMs=1790403962609 durationSeconds=2700
+2026-09-26T13:41:04+08:00 HOST_SCREEN_OFF returnCode=0 mWakefulness=Dozing
+2026-09-26T14:26:10+08:00 HOST_WAKE returnCode=0
+2026-09-26T14:26:15+08:00 STAGE3_COMPLETED status=overtime completedAtMs=1790403962613 errorMs=4 alarmActive=true
+2026-09-26T14:26:15+08:00 STAGE3_CLEANUP session=stage3-1790401262609
+2026-09-26T14:26:15+08:00 HOST_WAKE returnCode=0
+2026-09-26T14:26:18+08:00 47:12 +4 -1: (tearDownAll)
+2026-09-26T14:26:19+08:00 47:13 +4 -1: Some tests failed.
+2026-09-26T14:26:19+08:00 
+2026-09-26T14:26:19+08:00 Failing tests:
+2026-09-26T14:26:19+08:00   C:/Users/12713/Documents/blue_hydrangea_work/integration_test/device_clock_and_soak_test.dart: C-01 C-02 C-10 mode fullscreen and repeated calendar interactions
+2026-09-26T14:26:20+08:00 HOST_WAKE returnCode=0
+2026-09-26T14:26:20+08:00 RUN_EXIT_CODE=1

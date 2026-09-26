@@ -1,0 +1,17 @@
+{
+  "startedAt": "2026-09-26T14:42:36+08:00",
+  "test": "integration_test/device_followup_suite_test.dart",
+  "deviceAlias": "xiaomi14",
+  "seconds": 30,
+  "repeat": 1,
+  "screenOff": false,
+  "plainName": null,
+  "testPattern": "[DC]-01",
+  "physicalTaps": true,
+  "model": "23127PN0CC",
+  "android": "16",
+  "systemBuild": "OS3.0.302.0.WNCCNXM",
+  "baseCommit": "e94475f8f7b7cb9db3f59eccc05fd1d2dee97f5b",
+  "finishedAt": "2026-09-26T14:43:27+08:00",
+  "exitCode": 1
+}

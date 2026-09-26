@@ -1,0 +1,301 @@
+{
+  "generatedAt": "2026-09-26T14:56:53.732955+08:00",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "file": "host-analyze-134641.log",
+      "bytes": 1042,
+      "sha256": "5b83fd8972ea7a3eb5c153a096c2d0ee8e1efb16dabe422d386fd6153bb2fe2f"
+    },
+    {
+      "file": "host-analyze-135103.log",
+      "bytes": 200,
+      "sha256": "8257c4ecaf5e5bc863e98ea62cf521fd0c39e217d78b59a0416ac812dcc6147d"
+    },
+    {
+      "file": "host-analyze-135755.log",
+      "bytes": 200,
+      "sha256": "20ebb78c1413dc6b511ee6d7923fae82bc407745179d186829ac87c6a3c90361"
+    },
+    {
+      "file": "host-analyze-140757.log",
+      "bytes": 200,
+      "sha256": "ebac0acd69fc1d55872d88b4f85c74154735e2050bd099d7b6f8605322557776"
+    },
+    {
+      "file": "host-analyze-141217.log",
+      "bytes": 200,
+      "sha256": "d4fbd77a35872c0452f30b26f30ad7de30710f65de00e51c47b3a51fccc401dc"
+    },
+    {
+      "file": "host-analyze-141719.log",
+      "bytes": 200,
+      "sha256": "fcb71a74fd007046285157933871a71fe1cb42d13e11a767cf9b1ab6aec33cc5"
+    },
+    {
+      "file": "host-analyze-144145.log",
+      "bytes": 476,
+      "sha256": "c375abae180df7cca9d9571ac835470474a0fe844b632feff2e453ffd0ad8362"
+    },
+    {
+      "file": "host-analyze-145022.log",
+      "bytes": 200,
+      "sha256": "9b12cbd04f54c455e8f8244421e0106ee1085fbb87fb3b20edb8f8ceb706e7a7"
+    },
+    {
+      "file": "host-checks-134713.json",
+      "bytes": 415,
+      "sha256": "f2c5df33284f74148f3fb547fec2c0beeffd7776af25a58345f94f597e229a1a"
+    },
+    {
+      "file": "host-checks-135124.json",
+      "bytes": 415,
+      "sha256": "9e0f52f4a5f083f2df436b466328bdbc9e776ceeb7614a289daff0a4978d346b"
+    },
+    {
+      "file": "host-checks-135814.json",
+      "bytes": 207,
+      "sha256": "457bd3909a1133c05db3de7e9a2ada461f931e7bb3262dcbec0c7454ed8c60e2"
+    },
+    {
+      "file": "host-checks-140817.json",
+      "bytes": 415,
+      "sha256": "106cf5103d3cc9051ca533c5f2b2051ebb62f34d6282938c492375c1a7d1e788"
+    },
+    {
+      "file": "host-checks-141236.json",
+      "bytes": 207,
+      "sha256": "d95d324302c00ada7983831903fa89e0853cc853f6caf9dfe9fcaaad63c2c949"
+    },
+    {
+      "file": "host-checks-141738.json",
+      "bytes": 207,
+      "sha256": "3ce627c305b2f55669fefbbef6e8de5a1c19919d7c31458591e36885b5a51934"
+    },
+    {
+      "file": "host-checks-144205.json",
+      "bytes": 207,
+      "sha256": "5b5cd19e35695eeaa7957e56836ef5a1c45bf0c8762107d82ae0e6893f9aba83"
+    },
+    {
+      "file": "host-checks-145042.json",
+      "bytes": 415,
+      "sha256": "231d79fb9fd7ff7dee466337326e6a1e89622055160eb6afc77a651db3d7c191"
+    },
+    {
+      "file": "host-regression-134407.log",
+      "bytes": 9437,
+      "sha256": "7888156ccce8762ee4b32505313815604f8ce320779aca3865f03cbbbb0dfd78"
+    },
+    {
+      "file": "host-regression-134929.log",
+      "bytes": 8446,
+      "sha256": "c64a0823d42ddcb10fde2012aaec6a6c515846d529072ed46a4adc9fa13a58ba"
+    },
+    {
+      "file": "host-regression-140624.log",
+      "bytes": 9601,
+      "sha256": "3f5262dbb52507f7399e931b9e66c317354665b4e68d37a6fac9891fb603c927"
+    },
+    {
+      "file": "host-regression-144849.log",
+      "bytes": 9601,
+      "sha256": "884559cf2920c701a35b55e789e184e817b2efa63f4f3d68702b18aa194187f5"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2902,
+      "sha256": "5e4d8618fb845c660478fba7c5a94cbc7075c8b3cebb8c4085bf55acde71488e"
+    },
+    {
+      "file": "xiaomi14-clock-long-133837-countdown-reset.png",
+      "bytes": 827527,
+      "sha256": "f529ce1414c8f480bb7158e40f8322d0eaf9730ba9f33ccacc173ef644c546f7"
+    },
+    {
+      "file": "xiaomi14-clock-long-133837-countdown-silent-overtime.png",
+      "bytes": 779696,
+      "sha256": "3b7660830622c41dbfe70f087b4ee2cfc61c10eee0fc128cd3383312286ee4ae"
+    },
+    {
+      "file": "xiaomi14-clock-long-133837-stopwatch-classification.png",
+      "bytes": 279355,
+      "sha256": "34f5c16a80dd6b4910ec2eb92a621b97907aa7a6d946d0b96cceaad441814297"
+    },
+    {
+      "file": "xiaomi14-clock-long-133837.json",
+      "bytes": 413,
+      "sha256": "b0a91d2a6a7ea9650aba6f4f1b23035173c86bcab5009b1052cbac8a7c4eb6b9"
+    },
+    {
+      "file": "xiaomi14-clock-long-133837.log",
+      "bytes": 5543,
+      "sha256": "1c071d7801fd93e3fb92de9e95d38a606560112804a4aa17c99382ec99c7f31a"
+    },
+    {
+      "file": "xiaomi14-core-flow-133214.json",
+      "bytes": 407,
+      "sha256": "67fc7500d410459437a02226864d3981947175dc8904ed601f7727d620fa94fc"
+    },
+    {
+      "file": "xiaomi14-core-flow-133214.log",
+      "bytes": 2503,
+      "sha256": "d269c5297adf26829b62a9f224b1083f3095151205aa868d475aa97d28e4e2e3"
+    },
+    {
+      "file": "xiaomi14-deadline-1790403962609.json",
+      "bytes": 497,
+      "sha256": "af9d91803f43d279986b3751e4ba0b1176819fe0afde034117534c476e339736"
+    },
+    {
+      "file": "xiaomi14-followup-142909-anniversary-list.png",
+      "bytes": 616600,
+      "sha256": "1320f1e4a983a79e6be606947ae9131e377e2f4d011702529a5a6246a50f714a"
+    },
+    {
+      "file": "xiaomi14-followup-142909-calendar-pomodoro.png",
+      "bytes": 677650,
+      "sha256": "bb8cfef1e85e168e8e5f15f4ebbb4232b1894022204235be67c9a9bb3a7d3e99"
+    },
+    {
+      "file": "xiaomi14-followup-142909-calendar-stopwatch.png",
+      "bytes": 677650,
+      "sha256": "bb8cfef1e85e168e8e5f15f4ebbb4232b1894022204235be67c9a9bb3a7d3e99"
+    },
+    {
+      "file": "xiaomi14-followup-142909-clock-calendars-complete.png",
+      "bytes": 815098,
+      "sha256": "97f761ce1f1dd77c3600ff532d6ba803e3b54a3cdfb407b6d9f79f44832337dc"
+    },
+    {
+      "file": "xiaomi14-followup-142909-countdown-silent-overtime.png",
+      "bytes": 781181,
+      "sha256": "352eaec1ba93eff71174b975f3b17752084dab24b1ca735aec79558fe4e22daf"
+    },
+    {
+      "file": "xiaomi14-followup-142909-date-range-reverse.png",
+      "bytes": 212598,
+      "sha256": "f46fb80fa7f3eed6263d95981174dcfc65f36bf3bfd65ad8cba74f3b01da2628"
+    },
+    {
+      "file": "xiaomi14-followup-142909-garden-inline-phrase.png",
+      "bytes": 766379,
+      "sha256": "c0214e3b1d50b7ca7e325746463c3a1a950e3f2bd0b80dc1e4d50fa1b2c564f4"
+    },
+    {
+      "file": "xiaomi14-followup-142909-mood-edit-empty.png",
+      "bytes": 385927,
+      "sha256": "c40788127befded591e036065aeccdef3b8e29bb1b6400d3d4b57f5fd7f7e382"
+    },
+    {
+      "file": "xiaomi14-followup-142909-welcome-completed.png",
+      "bytes": 764705,
+      "sha256": "a20e3d39c8c661542ea15a82eadbe15de56bccbe628ae2488112f4098b4d3228"
+    },
+    {
+      "file": "xiaomi14-followup-142909-white-noise-controls.png",
+      "bytes": 740959,
+      "sha256": "d1ca4642e047710d5b92b716958bd581d421b75f0f35113e4c075cf5e6f4b7b4"
+    },
+    {
+      "file": "xiaomi14-followup-142909.json",
+      "bytes": 412,
+      "sha256": "4a19c764d514410abcaed9119b6d24e7bb37e1436984a399e24f9b39349762ce"
+    },
+    {
+      "file": "xiaomi14-followup-142909.log",
+      "bytes": 25802,
+      "sha256": "e9e54203edbe3c831494917eac2bfe8d09ee2dd34712c0cd231be09a4bfa9a0b"
+    },
+    {
+      "file": "xiaomi14-functional-133538.json",
+      "bytes": 414,
+      "sha256": "05035a6c292dff524eb3351f71ee8830c481b0e2d08ed734bab1a4d930da11b2"
+    },
+    {
+      "file": "xiaomi14-functional-133538.log",
+      "bytes": 8026,
+      "sha256": "c4b2d2827196eaf43c3c25a425b3491704b9b216369518b594a2af9414475c8b"
+    },
+    {
+      "file": "xiaomi14-input-final-144705-clock-fullscreen-complete.png",
+      "bytes": 813861,
+      "sha256": "fef52a9483724c0d9c2576fee0efdac5b875d13cf3712cb5fe64c68508ad6c3c"
+    },
+    {
+      "file": "xiaomi14-input-final-144705-mood-edit-empty.png",
+      "bytes": 395396,
+      "sha256": "e9d3a32e5aa8877480396c726d45b0b5853f399d40ff58f7eaca3253044bb1a3"
+    },
+    {
+      "file": "xiaomi14-input-final-144705.json",
+      "bytes": 511,
+      "sha256": "5d04dd06750cd025870301359d04842f79edfcd3c41e090185aa0cf62eab3f86"
+    },
+    {
+      "file": "xiaomi14-input-final-144705.log",
+      "bytes": 19175,
+      "sha256": "2378782836597ad9c6c6504a540f9266abf3008e4b21837c51df0d29b96e4b15"
+    },
+    {
+      "file": "xiaomi14-input-review-144140.json",
+      "bytes": 492,
+      "sha256": "213585871be501e0e43a6de1cfd7e89820a6b5b524e574e55de13f64e8507f15"
+    },
+    {
+      "file": "xiaomi14-input-review-144140.log",
+      "bytes": 615,
+      "sha256": "a2096bd077bd819f165b43f9eca82a3aa726543fd5a49281114db6b938b9700e"
+    },
+    {
+      "file": "xiaomi14-input-review-144236.json",
+      "bytes": 488,
+      "sha256": "215ccc77db8acfbd90b161956f3cce0b9cc9b758526a3fc4dc612e69f6b7ff41"
+    },
+    {
+      "file": "xiaomi14-input-review-144236.log",
+      "bytes": 7896,
+      "sha256": "083e6513007928928b0a9118e261fc6d7b1d4e5a72a77f23bc3f31bad7c64b09"
+    },
+    {
+      "file": "xiaomi14-mood-review-143746.json",
+      "bytes": 457,
+      "sha256": "23443867c23528cc0956373cbcfb60054c4f3a0a276fc7e1e8f877c1cd5c3507"
+    },
+    {
+      "file": "xiaomi14-mood-review-143746.log",
+      "bytes": 3259,
+      "sha256": "189d25f40110ceda686d3de1c54ade62160c872704747d6ca567f00621158088"
+    },
+    {
+      "file": "xiaomi14-short-countdown-132218.json",
+      "bytes": 409,
+      "sha256": "0aec4a897b5f19da7869bd1ee51f931fc4c87031e7c65f75aa4a8b14ef2fddf3"
+    },
+    {
+      "file": "xiaomi14-short-countdown-132218.log",
+      "bytes": 7409,
+      "sha256": "26e5b4a5e95998b0bed454aa44c939f7b9d9af1d510bdf960d37ae9f3d87145d"
+    },
+    {
+      "file": "xiaomi14-short-countdown.json",
+      "bytes": 409,
+      "sha256": "38cd819d3643adc6b59b7d3d1423a640ed33fb19d3c823a94455fd20e98c5df5"
+    },
+    {
+      "file": "xiaomi14-short-countdown.log",
+      "bytes": 2309,
+      "sha256": "52f21f1909919028b39aaec1dcafdfe2a6f82b7bd56041b5466c76192f410eca"
+    },
+    {
+      "file": "xiaomi14-storage-132715.json",
+      "bytes": 405,
+      "sha256": "0f2d84cca1f376cd064cfbd6ce213ea4cc102a345a72e43901afc88b24c84cff"
+    },
+    {
+      "file": "xiaomi14-storage-132715.log",
+      "bytes": 1926,
+      "sha256": "8523436cbcba96b04c8ec5d32d5df4065dfa7d19e599b196c6c721342a7f10bc"
+    }
+  ]
+}

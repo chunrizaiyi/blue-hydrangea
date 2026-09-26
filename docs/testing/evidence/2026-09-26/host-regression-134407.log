@@ -1,0 +1,72 @@
+Flutter assets will be downloaded from https://storage.flutter-io.cn. Make sure you trust this source!
+00:00 +0: loading C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart
+00:00 +0: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-01/A-11 今日花语只发送本次选择的材料并解析合法响应
+00:00 +1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-03 上游错误状态逐一转为可理解提示且不泄露响应原文
+00:00 +2: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-05 取消旧请求后，旧结果不可返回
+00:00 +3: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-08/A-12 非法返回与无效输入不会被当作花语展示
+00:00 +4: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-06 情绪解语解析完整卡片且请求不夹带其他本地记录
+00:00 +5: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-07 追问后才生成完整分析
+00:00 +6: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_service_contract_test.dart: A-08 情绪解语缺失必填字段时明确失败
+00:00 +7: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +8: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +9: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +10: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +11: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +12: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +13: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +14: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +15: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +16: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +17: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +18: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +19: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +20: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +21: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +22: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +23: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +24: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +25: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +26: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +27: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +28: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +29: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +30: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +31: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +32: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +33: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:00 +34: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +35: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +36: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +37: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +38: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +39: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +40: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +41: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +42: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:01 +43: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase refused connection returns a safe error
+00:02 +44: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase oversized body is rejected
+00:02 +45: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase interrupted response does not remain loading
+00:32 +45 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase interrupted response does not remain loading [E]
+  TimeoutException after 0:00:30.000000: Test timed out after 30 seconds. See https://pub.dev/packages/test#timeouts
+  dart:isolate  _RawReceivePort._handleMessage
+  
+00:32 +45 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase redirect does not forward credentials
+00:32 +46 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-08 phrase malformed envelope variants are rejected
+00:32 +47 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase real response deadline is bounded
+AI_TIMEOUT scene=phrase elapsedMs=35001
+01:07 +48 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion refused connection returns a safe error
+01:09 +49 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion oversized body is rejected
+01:09 +50 -1: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion interrupted response does not remain loading
+01:39 +50 -2: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion interrupted response does not remain loading [E]
+  TimeoutException after 0:00:30.000000: Test timed out after 30 seconds. See https://pub.dev/packages/test#timeouts
+  dart:isolate  _RawReceivePort._handleMessage
+  
+01:39 +50 -2: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion redirect does not forward credentials
+01:39 +51 -2: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-08 emotion malformed envelope variants are rejected
+01:39 +52 -2: C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion real response deadline is bounded
+AI_TIMEOUT scene=emotion elapsedMs=50002
+02:29 +53 -2: Some tests failed.
+
+Failing tests:
+  C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 emotion interrupted response does not remain loading
+  C:/Users/12713/Documents/blue_hydrangea_work/test/ai_transport_resilience_test.dart: A-04 phrase interrupted response does not remain loading

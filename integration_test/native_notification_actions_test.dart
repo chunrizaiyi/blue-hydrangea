@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:path_provider/path_provider.dart';
 
 const _channel = MethodChannel('blue_hydrangea/timer_service');
 
@@ -28,6 +29,10 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   testWidgets('C-07 通知栏暂停与继续同步原生计时状态', (tester) async {
+    expect(
+      (await getApplicationSupportDirectory()).path,
+      contains('com.example.blue_hydrangea.stage3test/'),
+    );
     expect(
       await _channel.invokeMethod<bool>('ensureNotificationPermission'),
       true,

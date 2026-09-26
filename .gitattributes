@@ -1,0 +1,2 @@
+# Preserve evidence bytes so published SHA-256 values remain reproducible.
+docs/testing/evidence/2026-09-26/** -text
